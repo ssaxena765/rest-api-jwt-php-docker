@@ -1,0 +1,30 @@
+version : "3"
+services:
+    www:
+        image: php:apache
+        volumes:
+          - "./:/var/www/html"
+        ports:
+            - 80:80
+           # - 443:443 # for ssl 
+        build:
+           dockerfile: ./Dockerfile
+      
+
+    db:
+        image: mysql:latest
+        environment:
+            - MYSQL_DATABASE=grmap
+            - MYSQL_USER=docker_user
+            - MYSQL_PASSWORD=password
+            - MYSQL_ALLOW_EMPTY_PASSWORD=1
+        volumes:
+          - "./dockerdb:/docker-entrypoint-initdb.d"   # docker-php-ext-install mysqli (run in apache container and restart apache container.)
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - 8001:80
+        environment:
+            - PMA_HOST=db
+            - PMA_PORT=3306
