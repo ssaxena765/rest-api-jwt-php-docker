@@ -19,3 +19,5 @@ git checkout <23f6191-Unique File No> Readme.txt
 Created a repository on github  -  rest-api-jwt-php-docker
 
 git remote add origin https://github.com/ssaxena765/rest-api-jwt-php-docker.git
+
+git push -u origin master  // to pust all files to the repository
