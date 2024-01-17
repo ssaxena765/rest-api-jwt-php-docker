@@ -21,3 +21,4 @@ Created a repository on github  -  rest-api-jwt-php-docker
 git remote add origin https://github.com/ssaxena765/rest-api-jwt-php-docker.git
 
 git push -u origin master  // to pust all files to the repository
+git pull -u origin master  // to pull all files from the repository
