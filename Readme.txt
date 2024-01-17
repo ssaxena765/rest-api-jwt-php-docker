@@ -13,3 +13,4 @@ git config --global user.name "Shashank Saxena"  #first time only
 git commit -m "1"
 git log
 git log --oneline
+git checkout <23f6191-Unique File No> Readme.txt
