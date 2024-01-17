@@ -3,10 +3,10 @@
 	* Database Connection
 	*/
 	class DbConnect {
-		private $server = 'localhost';
+		private $server = 'db';
 		private $dbname = 'jwtapi';
-		private $user = 'root';
-		private $pass = '';
+		private $user = 'docker_user_jwtapi';
+		private $pass = 'password';
 
 		public function connect() {
 			try {
