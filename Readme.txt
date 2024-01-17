@@ -7,7 +7,8 @@ git add <filename>
 git status
 (make some change in the file)
 git add <filename>
-git commit -m "1"
+git commit -m "<any heading>"
 git config --global user.email "ssaxena765@gmail.com"  #first time only
 git config --global user.name "Shashank Saxena"  #first time only
 git commit -m "1"
+git log
